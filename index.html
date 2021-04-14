@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Lazaro</title>
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="icon" href="assets/img/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="body--container">
+        <div class="nav">
+            <section class="nav__head">
+                <h1 class="nav__head__name">Anthony Lazaro</h1>
+                <h3 class="nav__head__title">Web Developer</h3>
+                
+                <div class="nav__contact">
+                    <a class="contact__link" href="https://www.linkedin.com/in/anthonylazaro/"><i class="fab fa-linkedin icon-test contact__icon"></i></a>
+                    <a class="contact__link" href="https://github.com/AFLazaro"><i class="fab fa-github icon-test contact__icon"></i></a>
+                    <a class="contact__link" href="mailto:AFLazaro2@yahoo.com"><i class="fas fa-envelope-square icon-test contact__icon"></i></a>
+                </div>
+            </section>
+            
+            <div class="nav__buttons">
+                <button class="btn btn-nav btn-about">About Me</button>
+                <button class="btn btn-nav btn-projects">Projects</button>
+                <button class="btn btn-nav btn-resume">Resume</button>
+            </div>
+        </div>
+
+        <section class="section-component about hidden remove-tab">
+            <div class="section__head">
+                <h2 class="section__head__title">About Me</h2>
+                <button class="close-btn about__close"><span class="iconify" data-icon="ant-design:close-circle-outlined" data-inline="false"></span></button>
+            </div>
+            <div class="section__container">
+                <p class="about__info">Hi, I'm Anthony. After working in the finance industry for the past few years, I left my position in order to transition into web development. I'm looking for an internship or entry level role where I can demonstrate the skills that I've developed by helping to build functional and responsive websites to fulfill any need. I have experience working with the following technologies:</p>
+                <div class="about__tech">
+                    <span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false" title="HTML"></span>
+                    <span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false" title="CSS"></span>
+                    <span class="iconify" data-icon="logos:javascript" data-inline="false" title="JavaScript"></span>
+                    <span class="iconify" data-icon="logos:bootstrap" data-inline="false" title="Bootstrap"></span>
+                    <span class="iconify" data-icon="vscode-icons:file-type-node" data-inline="false" title="Node.js"></span>
+                    <span class="iconify" data-icon="vscode-icons:file-type-ejs" data-inline="false" title="EJS"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-component projects hidden remove-tab">
+            <div class="section__head">
+                <h2 class="section__head__title">Projects</h2>
+                <button class="close-btn projects__close"><span class="iconify" data-icon="ant-design:close-circle-outlined" data-inline="false"></span></button>
+            </div>
+            <div class="section__container projects">
+                <div class="projects__cards">
+                    <div class="card">
+                        <div class="card__head">
+                            <h4 class="card__head__title">World Factbook</h4>
+                            <p class="card__head__tech">
+                                <i class="fab fa-html5" title="HTML"></i>
+                                <i class="fab fa-css3-alt" title="CSS"></i>
+                                <i class="fab fa-js" title="JavaScript"></i>
+                                <i class="fab fa-bootstrap" title="Bootstrap"></i>
+                                <i class="fab fa-node-js" title="Node.js"></i>
+                                <span title="EJS">&lt%</span>
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/img/world-factbook.png" alt="World Factbook homepage">
+                        <div class="card__btns">
+                            <a class="btn btn--small btn-link mr-sm" href="https://world-factbook-al.herokuapp.com/">Site</a>
+                            <a class="btn btn--small btn-link" href="https://github.com/AFLazaro/world-factbook">Repository</a>
+                        </div>
+                        <p class="card__description">Utilizes API calls to search for a country based on one of multiple search parameters and displays matching results. The user can then select one of the results, which redirects to another page and displays some basic information of that country, along with a map and flag.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__head">
+                            <h4 class="card__head__title">Todo List</h4>
+                            <p class="card__head__tech">
+                                <i class="fab fa-html5" title="HTML"></i>
+                                <i class="fab fa-css3-alt" title="CSS"></i>
+                                <i class="fab fa-js" title="JavaScript"></i>
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/img/todo-list.png" alt="Todo list homepage">
+                        <div class="card__btns">
+                            <a class="btn btn--small btn-link mr-sm" href="https://aflazaro.github.io/To-do-List/">Site</a>
+                            <a class="btn btn--small btn-link" href="https://github.com/AFLazaro/To-do-List">Repository</a>
+                        </div>
+                        <p class="card__description">A basic todo list with simple styling. Can add new items using either the "add" button or the enter key. List items can be greyed out by clicking on them. Individual list items can be deleted using the "trash" button to the right, or the entire list can be cleared using the "clear" button. Also features dynamic date and time on top of the page.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__head">
+                            <h4 class="card__head__title">Social Media Dashboard</h4>
+                            <p class="card__head__tech">
+                                <i class="fab fa-html5" title="HTML"></i>
+                                <i class="fab fa-css3-alt" title="CSS"></i>
+                                <i class="fab fa-js" title="JavaScript"></i>
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/img/social-media-dashboard.png" alt="Sample social media dashboard page">
+                        <div class="card__btns">
+                            <a class="btn btn--small btn-link mr-sm" href="https://aflazaro.github.io/Social-media-dashboard-with-theme-switcher/">Site</a>
+                            <a class="btn btn--small btn-link" href="https://github.com/AFLazaro/Social-media-dashboard-with-theme-switcher">Repository</a>
+                        </div>
+                        <p class="card__description">A challenge by <a class="card__description__link" href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H">Frontend Mentor</a> to build a dashboard displaying sample social media metrics. Features color transitions when hovering over a card as well as a switch to change the display to "dark mode".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="section-component resume hidden remove-tab">
+            <div class="section__head">
+                <h2 class="section__head__title">Resume</h2>
+                <button class="close-btn resume__close"><span class="iconify" data-icon="ant-design:close-circle-outlined" data-inline="false"></span></button>
+            </div>
+            <div class="section__container">
+                <div class="resume__btns">
+                    <button class="btn btn--small show-hide-btn mr-sm"><i class="fas fa-chevron-down"></i> Show / <i class="fas fa-chevron-up"></i> Hide</button>
+                    <form action="assets/Resume_AL_210402.pdf" method="navigate" target="_blank" rel="noopener noreferrer">
+                        <button class="btn btn--small mr-sm" type="submit"><i class="far fa-plus-square"></i> New Window</button>
+                    </form>
+                    <a class="btn btn--small btn-link" href="assets/Resume_AL_210402.pdf" download="Resume_AL_210402.pdf"><i class="fas fa-download"></i> Download</a>
+                </div>
+                <embed class="resume__display collapsed" src="assets/Resume_AL_210402.pdf" type="application/pdf" title="Resume pdf">
+            </div>
+        </section>
+    </div>
+
+    <!-- Background image: https://unsplash.com/photos/puwdjzA1-AQ -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

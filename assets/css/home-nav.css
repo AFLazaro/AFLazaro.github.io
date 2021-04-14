@@ -1,0 +1,78 @@
+/*** NAV COMPONENT ***/
+.nav {
+    text-align: center;
+    position: relative;
+}
+
+.nav__head {
+    padding: 4rem 12rem;
+    border-top: 1px solid var(--text-color-white);
+    border-bottom: 1px solid var(--text-color-white);
+    margin-bottom: 8rem;
+
+    background-color: var(--section-bg-color-medium);
+}
+
+@media screen and (max-width: 540px) {
+    .nav__head {
+        margin-bottom: 6rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .nav__head {
+        padding: 4rem 8rem;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .nav__head {
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .nav__head {
+        padding: 2rem 6rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .nav__head {
+        padding: 2rem 4.6rem;
+    }
+}
+
+.nav__head__name {
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 540px) {
+    .nav__head__name {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .nav__head__name {
+        font-size: 3rem;
+    }
+}
+
+.nav__head__title {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 540px) {
+    .nav__head__title {
+        font-size: 1.5rem;
+    }
+}
+
+.nav__contact {
+    margin-top: 2rem;
+}

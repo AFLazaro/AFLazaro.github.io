@@ -1,0 +1,107 @@
+@import url(general-section.css);
+@import url(home-nav.css);
+@import url(about-me.css);
+@import url(projects.css);
+@import url(resume.css);
+@import url(buttons.css);
+@import url(animations.css);
+
+:root {
+    --text-color-white: #f2f2f2;
+    --section-bg-color-medium: rgba(0, 0, 0, 0.4);
+    --section-bg-color-dark: rgba(0, 0, 0, 0.6);
+}
+
+html {
+    font-size: 62.5%;  /* Sets 1 rem to 10 px */
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 720px){
+    html {
+        font-size: 58%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    color: var(--text-color-white);
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+.body--container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 490px) {
+    .body--container {
+        overflow-y: auto;
+    }
+}
+
+
+
+/*** ICONS ***/
+.contact__icon {
+    font-size: 2.5rem;
+    margin: 0 1rem;
+    transition: transform .2s;
+    color: var(--text-color-white);
+}
+.contact__icon:hover {
+    transform: scale(1.2);
+    transition: transform .2s;
+}
+.contact__link:focus {
+    outline: none;
+    padding-top: .8rem;
+    box-shadow: 0 0 0 2px var(--text-color-white);
+}
+
+
+
+/*** UTILITY CLASSES ***/
+.hidden {
+    opacity: 0;
+    transform: translateX(180%);
+}
+
+.remove-tab {
+    display: none;
+}
+
+.collapsed {
+    height: 0;
+}
+
+.mr-sm {
+    margin-right: .6rem;
+}

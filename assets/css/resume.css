@@ -1,0 +1,9 @@
+/*** "RESUME" SECTION ***/
+.resume__display{
+    width: 100%;
+    height: 80vh;
+}
+
+.resume__btns {
+    display: flex;
+}

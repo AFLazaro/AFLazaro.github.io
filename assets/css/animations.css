@@ -1,0 +1,98 @@
+.slidein {
+    animation-duration: .4s;
+    animation-name: slidein;
+}
+ 
+.slideout {
+    animation-duration: .4s;
+    animation-name: slideout;
+}
+ 
+@keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translateX(180%);
+    }
+    50% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+ 
+@keyframes slideout {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+        transform: translateX(180%);
+    }
+}
+ 
+ 
+.fadeoutShrink {
+    animation-duration: .4s;
+    animation-name: fadeoutShrink;
+}
+  
+.fadeinGrow {
+    animation-duration: .4s;
+    animation-name: fadeinGrow;
+}
+ 
+@keyframes fadeoutShrink {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+}
+
+@keyframes fadeinGrow {
+    from {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+ 
+.collapse {
+    animation-duration: 0.8s;
+    animation-name: collapse;
+}
+ 
+.uncollapse {
+    animation-duration: 0.8s;
+    animation-name: uncollapse;
+}
+ 
+@keyframes collapse {
+    from {
+        height: 80vh;
+    }
+    to {
+        height: 0;
+    }
+}
+
+@keyframes uncollapse {
+    from {
+        height: 0;
+    }
+    to {
+        height: 80vh;
+    }
+}
