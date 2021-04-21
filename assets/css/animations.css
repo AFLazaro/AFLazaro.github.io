@@ -70,29 +70,34 @@
 }
  
 .collapse {
-    animation-duration: 0.8s;
+    animation-duration: 0.4s;
     animation-name: collapse;
 }
  
 .uncollapse {
-    animation-duration: 0.8s;
+    animation-duration: 0.4s;
     animation-name: uncollapse;
 }
  
 @keyframes collapse {
     from {
-        height: 80vh;
+        max-height: 80vh;
+        opacity: 1;
     }
     to {
-        height: 0;
+        max-height: 0;
+        opacity: 0;
+        margin-bottom: 0;
     }
 }
 
 @keyframes uncollapse {
     from {
-        height: 0;
+        max-height: 0;
+        opacity: 0;
     }
     to {
-        height: 80vh;
+        max-height: 80vh;
+        opacity: 1;
     }
 }
